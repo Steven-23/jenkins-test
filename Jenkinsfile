@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build  -f home/jenkins-test/Dockerfile .'
+        sh 'docker build  .'
       }
     }
 
