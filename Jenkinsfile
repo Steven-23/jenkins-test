@@ -17,7 +17,7 @@ pipeline {
 
         stage('Unit test') {
           steps {
-            sh 'cd curiculum-front && npm i && npm run test:unit'
+            sh 'cd jenkins-test && npm i && npm run test:unit'
           }
         }
 
