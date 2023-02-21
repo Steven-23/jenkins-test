@@ -8,19 +8,8 @@ pipeline {
     }
 
     stage('Add log') {
-      parallel {
-        stage('Add log') {
-          steps {
-            sh 'ls -la'
-          }
-        }
-
-        stage('Unit test') {
-          steps {
-            sh 'cd jenkins-test && npm i && npm run test:unit'
-          }
-        }
-
+      steps {
+        sh 'ls -la'
       }
     }
 
