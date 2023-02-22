@@ -9,13 +9,15 @@ pipeline {
 
     stage('Add log') {
       steps {
-        sh 'ls -la'
+        sh 'pwd && ls'
       }
     }
 
     stage('Build') {
       steps {
-        sh 'docker build  .'
+        sh '''
+
+docker build  .'''
       }
     }
 
