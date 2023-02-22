@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('Add log') {
+    stage('Add log v2') {
       steps {
         sh 'pwd && ls'
       }
